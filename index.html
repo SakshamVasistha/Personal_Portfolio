@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a4c81e0993.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo s.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>JAVA Developer</p>
+                <h1>I'm <span>Saksham</span><br>Vasistha from Noida, India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2024-09-25 at 13.47.57_2f2ea798.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify;">Highly motivated and detail-oriented individual with a strong passion for financial markets, seeking a role in stock market analysis or trading. Equipped with knowledge of market trends, technical and fundamental analysis, and trading strategies. Committed to continuous learning and eager to gain practical experience in the stock market industry.
+                    <br>
+                    I’m deeply invested in the stock market and trading, continuously honing my financial acumen and staying informed on market trends. This passion for business extends to exploring innovative ideas and staying ahead in a dynamic economy.
+                    <br>
+                    As a Java Developer with a passion for both technology and business, I bring a diverse skill set to the table. My expertise spans Java development, where I design efficient, scalable solutions, and Microsoft Excel, leveraging its powerful features to analyze data and drive decision-making.
+                    <br>
+                    With strong soft skills such as effective communication, problem-solving, and adaptability, I collaborate well in teams and navigate challenges with ease. I'm always looking for opportunities to grow both technically and personally, combining my love for coding and business to create impactful solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>JAVA Developer</li>
+                            <li><span>MS Excel</span><br>MS Excel</li>
+                            <li><span>Project Management</span><br>Project Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>BTECH from CSE from I.T.S Engineering College, Greater Noida</li>
+                            <li><span>2021</span><br>Inter School(ISC 12th)</li>
+                            <li><span>2019</span><br>High School(ICSE 10th)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/car_rental.jpg">
+                    <div class="layer">
+                        <h2>Car Rental System</h2>
+                        <p style="text-align: justify;">Car Rental System is a Java-based console application that allows customers to rent vehicles from a rental company. It manages vehicle availability, tracks rental durations, calculates costs, and processes reservations.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/password-generator.jpg">
+                    <div class="layer">
+                        <h2>Password Generator</h2>
+                        <p style="text-align: justify;">A random password generator is a program designed to create strong, unique passwords that are difficult for attackers to guess or crack. The project is created using Python language.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/stockchatbot.jpg">
+                    <div class="layer">
+                        <h2>Stock ChatBot</h2>
+                        <p style="text-align: justify;">A Whatsapp Chat bot is an automated conversational agent integrated with the whats App messaging platform. The project is created by Python language, Flask, Twilio, and Marketstack API. The chatbot will tell you about the current stock price of a stock.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sakshamvasishtha@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0987654321</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="images/Saksham_Vasistha_9536866976.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Mesaage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Saksham</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    } 
+</script>
+
+</body>
+</html>
